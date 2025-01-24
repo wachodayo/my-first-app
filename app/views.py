@@ -3,6 +3,10 @@ from .models import User
 from .forms import UserForm
 
 
+
+def home(request):
+    return render(request, 'home.html')
+
 # Create your views here.
 def user_profile(request):
     if request.method == 'POST':
