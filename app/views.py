@@ -52,3 +52,6 @@ def matching_view(request):
     top_matches = [opponents[i] for i in sorted_indices[:3]]
 
     return render(request, 'matching_results.html', {'top_matches': top_matches})
+
+def success(request):
+    return render(request, 'success.html')
